@@ -1,0 +1,50 @@
+.tasks {
+    padding: 0 15px;
+
+    &__container {
+        @extend .container;
+    }
+    
+    &__item {
+        font-size: 2.25rem;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        padding-bottom: 50px;
+    }
+}
+
+.tasks-photos {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    padding-bottom: 94px;
+
+    &__box-title {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__item {
+        display: block;
+    }
+}
+
+.box-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 370px;
+    height: 70px;
+    background-color: $backgroundTasks;
+    color: $quinaryColor;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+
+    &__text {
+        padding-top: 27px;
+    }
+}

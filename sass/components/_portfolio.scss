@@ -1,0 +1,36 @@
+.portfolio {
+    @extend .container;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.list-button {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 295px;
+    padding-right: 303px;
+
+
+    &__item {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.62;
+        letter-spacing: 0.03em;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        background-color: $teamBackground;
+        padding: 6px 22px;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__item:hover,
+    &__item:focus {
+        color: $quinaryColor;
+        background-color: $primaryColor;
+        box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014, 0px 2px 2px #0000001f;
+    }
+}    
