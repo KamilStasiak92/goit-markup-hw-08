@@ -36,13 +36,12 @@
 }        
 
 .nav-list {
-    display: none;
     font-weight: 500;
     font-size: 0.875rem;
     line-height: 1.14;
     letter-spacing: 0.02em;
     list-style-type: none;
-    // display: flex;
+    display: flex;
     padding: 24px 0;
     margin-left: 46.5px;
 
@@ -97,7 +96,6 @@
 }            
 
 .contact {
-    display: none;
     font-weight: 500;
     font-size: 0.825rem;
     line-height: 1.14;
