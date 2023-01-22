@@ -151,32 +151,20 @@
 @media screen and (min-width: 1200px) {
 
 .footer {
-    background-color: $darkBackground;
-    padding-top: 60px;
 
     &__container {
         width: 1200px;
         margin: 0 auto;
-        display: flex;
         flex-direction: row;
-        align-items: center;
-        padding-bottom: 60px;
     }
 
 
-  
     .footer-address {
-        font-family: 'Raleway', sans-serif;
-        font-weight: 700;
         font-size: 1.625rem;
-        line-height: 1.19;
-        letter-spacing: 0.03em;
-        color: $quinaryColor;
     }
 }
 
 .footer-item {
-    padding-top: 20px;
 
     &__position {
         font-style: normal;
@@ -187,52 +175,14 @@
     }
 
     &__contact {
-        font-style: normal;
         font-size: 0.825rem;
-        line-height: 1.71; 
-        letter-spacing: 0.03em;
-        color: $senaryColor;
         padding-top: 9px;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__contact:hover,
-    &__contact:focus {
-        color: $primaryColor;
     }
 }
         
 .footer-social {
     margin-left: 70px;
-  
-    &__paragraph {
-        color: $quinaryColor;
-        font-size: 0.875rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin-bottom: 20px;
     }
-  
-    &__list {
-        display: flex;
-        justify-content: space-between;
-        gap: 10px;
-        list-style-type: none;
-    }
-  
-    &__icon {
-        fill: $quinaryColor;
-        background-color: $backgroundFooter;
-        border-radius: 50%;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__icon:hover {
-        background-color: $primaryColor;
-    }
-}    
 
 .footer-form {
     margin-left: 78px;
