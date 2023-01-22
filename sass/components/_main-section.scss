@@ -1,13 +1,60 @@
 .main-header {
     padding-top: 0px;
     text-align: center;
+    background-image: linear-gradient(to bottom, $backgroundGradient, $backgroundGradient), url(../images/background-image-mobile@1x.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__caption {
+        font-weight: 900;
+        font-size: 1,625rem;
+        line-height: 2,625;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $quinaryColor;
+        padding-bottom: 30px;
+        margin-top: 118px;
+}
+    &__button {
+        position: relative;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.87;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        color: $quinaryColor;
+        background-color: $primaryColor;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 41px 10px 42px;
+        margin-bottom: 118px
+}
+}
+
+@media screen and (min-width: 1200px) {
+
+.main-header {
+    padding-top: 0px;
+    text-align: center;
     background-image: linear-gradient(to bottom, $backgroundGradient, $backgroundGradient), url(../images/background-image.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 1600px;
 
     &__container {
-        @extend .container;
+        // @extend .container;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -43,3 +90,4 @@
         padding: 10px 41px 10px 42px;
     }
 }    
+}

@@ -1,8 +1,14 @@
 .tasks {
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+
+.tasks {
     padding: 0 15px;
 
     &__container {
-        @extend .container;
+        // @extend .container;
     }
     
     &__item {
@@ -47,4 +53,5 @@
     &__text {
         padding-top: 27px;
     }
+}
 }
