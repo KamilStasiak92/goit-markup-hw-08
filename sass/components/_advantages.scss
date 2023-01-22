@@ -5,7 +5,8 @@
 
 .description-list {
     list-style-type: none;
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
     padding: 0 15px;
     gap: 30px;
 
@@ -42,10 +43,12 @@
 .description-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    width: 352px;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &__list {
+        max-width: 354px;
+    }
 }
 }
 

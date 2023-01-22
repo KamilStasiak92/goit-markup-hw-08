@@ -144,6 +144,18 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+        align-items: normal;
+    }
+}
+
+.footer-social {
+    padding: 0;
+}
+
+.footer-form {
+
+    &__input {
+        width: 450px;
     }
 }
 }
