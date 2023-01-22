@@ -182,12 +182,15 @@
         
 .footer-social {
     margin-left: 70px;
+    padding-top: 0;
     }
 
 .footer-form {
     margin-left: 78px;
+    padding-top: 0;
 
     &__header {
+        padding-left: 0;
         padding-bottom: 20px;
         font-style: normal;
         font-weight: 700;
@@ -200,6 +203,7 @@
 
     &__item {
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 12px;

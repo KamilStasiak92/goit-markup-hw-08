@@ -41,9 +41,11 @@
 
 .description-list {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 352px;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 352px;
 }
 }
 
@@ -60,7 +62,11 @@
 
 .description-list {
     display: flex;
+    max-width: 270px;
+    justify-content: space-between;
     flex-direction: row;
+    flex-wrap: nowrap;
+
 
     &__icon {
         padding: 25px 100px;
@@ -70,5 +76,5 @@
         font-size: 0.825rem;
         line-height: 1.14;
     }
-    }
+}
 }

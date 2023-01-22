@@ -65,7 +65,8 @@
 .clients-list {
   
     &__item {
-        margin-right: 30px;
+        max-width: 210px;
+        margin-right: 0;
         gap: 30px;
         display: flex;
         justify-content: center;
