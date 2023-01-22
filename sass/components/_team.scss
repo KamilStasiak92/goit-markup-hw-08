@@ -14,12 +14,13 @@
 }
 
 .team-photos {
+    max-width: 100%;
     list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-left: 30px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 
     &__border {
         background-color: $quinaryColor;
@@ -69,23 +70,34 @@
     }
 }    
 
+@media screen and (min-width: 768px) {
+
+.team {
+    padding-top: 45px;
+
+    &__header {
+        padding-bottom: 30px;
+    }
+}
+
+.team-photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-bottom: 0;
+    gap: 30px;
+}
+}
 
 @media screen and (min-width: 1200px) {
 
 .team {
-    // @extend .content;
     background-color: $teamBackground;
     padding-top: 54px;
 
-    &__container {
-        // @extend .container
-    }
-
     &__header {
-        font-size: 2.25rem;
-        line-height: 1.17;
-        text-align: center;
-        letter-spacing: 0.03em;
         padding-bottom: 50px;
     }
 }

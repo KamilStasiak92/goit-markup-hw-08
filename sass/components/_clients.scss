@@ -51,52 +51,28 @@
 @media screen and (min-width: 1200px) {
 
 .clients {
-    // @extend .content;
-    // @extend .container;
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 94px;
     padding-top: 94px;
-    text-align: center;
 
     &__header {
         font-size: 2.25rem;
-        line-height: 1.17;
-        text-align: center;
-        letter-spacing: 0.03em;
         padding-bottom: 50px;
     }
 }    
   
 .clients-list {
-    display: flex;
   
     &__item {
         margin-right: 30px;
-        padding: 16px 32px;
-        border: 1px solid $teamIcon;
-        border-radius: $teamIcon;
+        gap: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  
-    &__item:last-child {
-        margin-right: 0;
-    }    
-  
-    &__item:hover {
-        border: 1px solid $primaryColor;
-    }    
-  
-    &__icon {
-        fill: $teamIcon;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  
-    &__item:hover &__icon {
-        fill: $primaryColor;
     }
 }
 }
